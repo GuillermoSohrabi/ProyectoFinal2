@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Figuras Geométricas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="header-container">
+        <h1 id="game-title">Entrenamiento de reflejos</h1>
+        <p id="game-instructions">Presiona la tecla correspondiente a cada figura geométrica antes de que desaparezca para ganar puntos.</p>
+        <p id="additional-instructions">Cada figura tiene una tecla asociada: Q=Circulo// W=Cuadrado // E= Triángulo // R= Octágono</p>
+        <p id="additional-instructions2">Si aciertas la moneda(octagono), suma x2. Si fallas cualquier figura, resta 1. SUERTE ! </p>
+        <button id="start-button">Iniciar Juego</button>
+    </div>
+   
+    <div id="game-container">
+        <div id="score">Puntuación: <span id="points">0</span></div>
+        <div id="timer">Tiempo: 30s</div>
+
+    </div>
+    <audio id="acierto" src="C:\Users\guill\Desktop\mario-coin-sfx.mp3"></audio>
+    <audio id="fallo" src="C:\Users\guill\Desktop\steve-old-hurt-sound_XKZxUk4.mp3"></audio>
+    
+    <script src="java.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Para que los elementos se apilen verticalmente */
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://png.pngtree.com/background/20220731/original/pngtree-tangram-colorful-geometric-figures-decorative-background-picture-image_1910126.jpg'); /* Cambia 'ruta/de/la/imagen.jpg' por la ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    }
+    
+#header-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente blanco */
+    border: 2px solid black; /* Borde sólido de 2px negro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno para separar el contenido del borde */
+    margin: 20px 0; /* Margen superior e inferior para separar del resto del contenido */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    text-align: center; /* Centrar el contenido horizontalmente */
+}
+
+#game-title {
+    text-align: center;
+    margin-top: 0; /* Elimina el margen superior predeterminado */
+}
+#game-instructions,
+#additional-instructions,
+#additional-instructions2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+#game-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    border: 2px solid black;
+    margin-bottom: 2%;
+}
+
+/* Definición del formato del cuadrado */
+.square {
+    width: 50px; /* Ancho fijo para todos los cuadrados */
+    height: 50px; /* Altura fija para todos los cuadrados */
+    background-color: blue; /* Color de fondo del cuadrado */
+    position: absolute;
+    border-radius: 5px; /* Bordes redondeados para que sea un cuadrado */
+}
+
+/* Estilo del contador dentro del cuadrado */
+.square .countdown {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Hace que aparezca en el medio*/
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+}
+
+
+.circle {
+    width: 50px; /* Ancho fijo para todos los cuadrados */
+    height: 50px; /* Altura fija para todos los cuadrados */
+    background-color: red; /* Color de fondo del cuadrado */
+    position: absolute;
+    border-radius: 50%; /* Bordes redondeados para que sea un cuadrado */
+}
+
+/* Estilo del contador dentro del cuadrado */
+.circle .countdown {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 60px solid green; /* Cambia el color del triángulo según tus preferencias */
+    position: absolute;
+}
+
+.triangle .countdown {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+}
+
+.octagon {
+    width: 50px; /* Ancho del octágono */
+    height: 50px; /* Altura del octágono */
+    position: absolute;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+    background-color: orange; /* Color de fondo del octágono */
+}
+
+.octagon .countdown {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+}
+
+
+#timer {
+    position: absolute;
+    top: 10px; /* distancia desde la parte superior del contenedor */
+    right: 10px; /* distancia desde el lado derecho del contenedor */
+    font-size: 20px;
+    color: black; /* color del texto */
+}
+
+#score {
+    font-size: 24px; /* Cambia el tamaño de fuente según sea necesario */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    color: #333; /* Cambia el color del texto si lo deseas */
+}
+
+/* Estilo para el botón iniciar*/
+#start-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Espacio entre el último párrafo y el botón */
+}
+
